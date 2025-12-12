@@ -1,35 +1,70 @@
+#################################
 # Python
+#################################
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.sqlite3
 
-# Virtual environment
+# Byte-compiled / optimized / DLL files
+*.so
+
+#################################
+# Virtual Environments
+#################################
 venv/
 env/
+.venv/
 
-# Playwright browser binaries
+#################################
+# Playwright Specific
+#################################
+# Playwright browser binaries and caches
 playwright/.cache/
 playwright/.local-browsers/
+# Test result artifacts
+test-results/
+videos/
+screenshots/
 
+#################################
 # Pytest
+#################################
 .pytest_cache/
+.cache/
 htmlcov/
+*.coverage
+coverage.xml
 
+#################################
 # Reports
+#################################
 reports/
 *.html
 *.xml
+*.json
 
+#################################
 # Logs
+#################################
 *.log
 
-# VS Code settings
+#################################
+# IDE / Editor files
+#################################
 .vscode/
+.idea/
+*.iml
 
-# macOS system files
+#################################
+# OS Specific
+#################################
 .DS_Store
+Thumbs.db
 
-# Environment files
+#################################
+# Environment / Secrets
+#################################
 .env
+.env.local
